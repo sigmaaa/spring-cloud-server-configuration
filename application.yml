@@ -1,0 +1,27 @@
+---
+# Items that apply to ALL profiles:
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
+#      defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
+
+---
+spring.config.activate.on-profile: natural
+numbers: 1,2,3,4,5,6,7,8,9,10
+
+---
+spring.config.activate.on-profile: odd
+numbers: 1,3,5,7,9,11,13,15,17,19
+
+---
+spring.config.activate.on-profile: even
+numbers: 2,4,6,8,10,12,14,16,18,20
+
+---
+spring.config.activate.on-profile: integer
+numbers: -5,-4,-3,-2,-1,0,1,2,3,4,5
+
+---
+spring.config.activate.on-profile: real
+numbers: -3.5,-2.1,0.0,1.2,2.7,3.14,4.5,5.9
